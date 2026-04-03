@@ -8,10 +8,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Routes
-app.get('/', (req: Request, res: Response) => {
-  res.send('Welcome to the API! Server is running.');
-});
 app.use('/tasks', taskRoutes);
 
 // Global error handler
