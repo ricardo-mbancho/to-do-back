@@ -6,7 +6,6 @@ export const getTasks = async (_req: Request, res: Response) => {
     const tasks = await Task.find().sort({ createdAt: -1 });
     res.json(tasks);
   } catch (error) {
-    console.error('getTasks error:', error);
     res.status(500).json({ message: 'Server error' });
   }
 }

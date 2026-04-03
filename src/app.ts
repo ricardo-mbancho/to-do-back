@@ -1,10 +1,8 @@
 import express, { Request, Response, NextFunction } from 'express';
-
 import cors from 'cors';
 import taskRoutes from './routes/taskRoutes';
 
 const app = express();
-
 
 // Middleware
 app.use(cors());
