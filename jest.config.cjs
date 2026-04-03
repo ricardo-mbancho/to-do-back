@@ -1,4 +1,3 @@
-// jest.config.cjs
 module.exports = {
   preset: 'ts-jest/presets/default-esm',
   testEnvironment: 'node',
@@ -8,9 +7,9 @@ module.exports = {
     '^.+\\.ts$': [
       'ts-jest',
       {
-        useESM: true,          // enable ESM
+        useESM: true,      
         diagnostics: {
-          ignoreCodes: [151002] // ignore Node16 hybrid module warning
+          ignoreCodes: [151002] 
         }
       }
     ]
